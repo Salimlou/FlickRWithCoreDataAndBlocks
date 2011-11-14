@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="872" systemVersion="11C74" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Photo" representedClassName="Photo" syncable="YES">
+        <attribute name="farm" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageID" attributeType="String" indexed="YES" syncable="YES" isSyncIdentityProperty="YES"/>
+        <attribute name="imageURl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="server" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbnailUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="relationship" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Place" inverseName="photosInThatPlace" inverseEntity="Place" syncable="YES"/>
+        <relationship name="takenBy" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Photograph" inverseName="photos" inverseEntity="Photograph" syncable="YES"/>
+    </entity>
+    <entity name="Photograph" representedClassName="Photograph" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pDesc" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="photos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Photo" inverseName="takenBy" inverseEntity="Photo" syncable="YES"/>
+        <fetchedProperty name="fetchedProperty" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="Photograph"/>
+        </fetchedProperty>
+    </entity>
+    <entity name="Place" representedClassName="Place" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="placeID" attributeType="String" indexed="YES" syncable="YES" isSyncIdentityProperty="YES"/>
+        <attribute name="placeType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="placeTypeId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="placeUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeZone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="woeid" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="photosInThatPlace" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Photo" inverseName="relationship" inverseEntity="Photo" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Photo" positionX="-54" positionY="-9" width="128" height="195"/>
+        <element name="Photograph" positionX="342" positionY="27" width="128" height="119"/>
+        <element name="Place" positionX="160" positionY="192" width="128" height="180"/>
+    </elements>
+</model>
