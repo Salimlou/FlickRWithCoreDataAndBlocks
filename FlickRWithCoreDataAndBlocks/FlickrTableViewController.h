@@ -30,6 +30,8 @@ typedef NSArray *(^download_operation_block)(NSString * criteria);
     BOOL hasThumb;
     
 }
+    ///////////TEST
+    ///////////TEST
 @property (retain) NSString *titleKey;// key to use when displaying items in the table; defaults to the first sortDescriptor's key
 @property (retain) NSString *subtitleKey; // key to use when displaying items in the table for the subtitle; defaults to nil
 @property (retain) NSString *nameOfClass;
