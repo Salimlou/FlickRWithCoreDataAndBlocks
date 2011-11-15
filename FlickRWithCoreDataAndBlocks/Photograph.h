@@ -2,7 +2,7 @@
 //  Photograph.h
 //  FlickRWithCoreDataAndBlocks
 //
-//  Created by Salim Benabbou on 13/11/11.
+//  Created by Salim Benabbou on 15/11/11.
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 

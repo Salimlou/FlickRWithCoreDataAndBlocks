@@ -9,8 +9,8 @@
         <attribute name="server" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="thumbnailUrl" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="relationship" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Place" inverseName="photosInThatPlace" inverseEntity="Place" syncable="YES"/>
         <relationship name="takenBy" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Photograph" inverseName="photos" inverseEntity="Photograph" syncable="YES"/>
+        <relationship name="takenIn" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Place" inverseName="photosInThatPlace" inverseEntity="Place" syncable="YES"/>
     </entity>
     <entity name="Photograph" representedClassName="Photograph" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
@@ -23,13 +23,14 @@
     <entity name="Place" representedClassName="Place" syncable="YES">
         <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="latitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="placeID" attributeType="String" indexed="YES" syncable="YES" isSyncIdentityProperty="YES"/>
         <attribute name="placeType" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="placeTypeId" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="placeUrl" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="timeZone" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="woeid" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="photosInThatPlace" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Photo" inverseName="relationship" inverseEntity="Photo" syncable="YES"/>
+        <relationship name="photosInThatPlace" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Photo" inverseName="takenIn" inverseEntity="Photo" syncable="YES"/>
     </entity>
     <elements>
         <element name="Photo" positionX="-54" positionY="-9" width="128" height="195"/>

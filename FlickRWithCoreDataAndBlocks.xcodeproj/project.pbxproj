@@ -20,9 +20,6 @@
 		FA8B0AD7146F5C41001EA378 /* ListPhotoByPlacesController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8B0ACC146F5C41001EA378 /* ListPhotoByPlacesController.m */; };
 		FA8B0AD8146F5C41001EA378 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8B0ACE146F5C41001EA378 /* PhotoViewController.m */; };
 		FA8B0ADE146F5D8F001EA378 /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8B0ADC146F5D8F001EA378 /* CoreDataTableViewController.m */; };
-		FA8B0AF314702C22001EA378 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8B0AF214702C22001EA378 /* Photo.m */; };
-		FA8B0AF614702C23001EA378 /* Photograph.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8B0AF514702C23001EA378 /* Photograph.m */; };
-		FA8B0AF914702C24001EA378 /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8B0AF814702C24001EA378 /* Place.m */; };
 		FA8B0AFC14702CDF001EA378 /* TopPlacesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8B0AFB14702CDF001EA378 /* TopPlacesViewController.m */; };
 		FA8B0AFF1470322A001EA378 /* ListPhotoByPlaceCoreDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8B0AFE1470322A001EA378 /* ListPhotoByPlaceCoreDataViewController.m */; };
 		FA8B0B09147049CF001EA378 /* FlickrTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8B0B08147049CF001EA378 /* FlickrTableViewController.m */; };
@@ -36,6 +33,9 @@
 		FAE792651471CF0C00242619 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE7925D1471CF0C00242619 /* SBJsonBase.m */; };
 		FAE792661471CF0C00242619 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE7925F1471CF0C00242619 /* SBJsonParser.m */; };
 		FAE792671471CF0C00242619 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE792611471CF0C00242619 /* SBJsonWriter.m */; };
+		FAE792711471E83500242619 /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE792701471E83500242619 /* Place.m */; };
+		FAE792741471E83500242619 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE792731471E83500242619 /* Photo.m */; };
+		FAE792771471E83600242619 /* Photograph.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE792761471E83600242619 /* Photograph.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,12 +63,6 @@
 		FA8B0ACE146F5C41001EA378 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhotoViewController.m; path = FlickRWithCoreDataAndBlocks/PhotoViewController.m; sourceTree = "<group>"; };
 		FA8B0ADC146F5D8F001EA378 /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
 		FA8B0ADD146F5D8F001EA378 /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
-		FA8B0AF114702C22001EA378 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Photo.h; path = FlickRWithCoreDataAndBlocks/Photo.h; sourceTree = "<group>"; };
-		FA8B0AF214702C22001EA378 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Photo.m; path = FlickRWithCoreDataAndBlocks/Photo.m; sourceTree = "<group>"; };
-		FA8B0AF414702C23001EA378 /* Photograph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Photograph.h; path = FlickRWithCoreDataAndBlocks/Photograph.h; sourceTree = "<group>"; };
-		FA8B0AF514702C23001EA378 /* Photograph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Photograph.m; path = FlickRWithCoreDataAndBlocks/Photograph.m; sourceTree = "<group>"; };
-		FA8B0AF714702C24001EA378 /* Place.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Place.h; path = FlickRWithCoreDataAndBlocks/Place.h; sourceTree = "<group>"; };
-		FA8B0AF814702C24001EA378 /* Place.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Place.m; path = FlickRWithCoreDataAndBlocks/Place.m; sourceTree = "<group>"; };
 		FA8B0AFA14702CDF001EA378 /* TopPlacesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TopPlacesViewController.h; path = FlickRWithCoreDataAndBlocks/TopPlacesViewController.h; sourceTree = "<group>"; };
 		FA8B0AFB14702CDF001EA378 /* TopPlacesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TopPlacesViewController.m; path = FlickRWithCoreDataAndBlocks/TopPlacesViewController.m; sourceTree = "<group>"; };
 		FA8B0AFD1470322A001EA378 /* ListPhotoByPlaceCoreDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListPhotoByPlaceCoreDataViewController.h; path = FlickRWithCoreDataAndBlocks/ListPhotoByPlaceCoreDataViewController.h; sourceTree = "<group>"; };
@@ -95,6 +89,12 @@
 		FAE7925F1471CF0C00242619 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonParser.m; path = FlickRWithCoreDataAndBlocks/JSON/SBJsonParser.m; sourceTree = SOURCE_ROOT; };
 		FAE792601471CF0C00242619 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonWriter.h; path = FlickRWithCoreDataAndBlocks/JSON/SBJsonWriter.h; sourceTree = SOURCE_ROOT; };
 		FAE792611471CF0C00242619 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = FlickRWithCoreDataAndBlocks/JSON/SBJsonWriter.m; sourceTree = SOURCE_ROOT; };
+		FAE7926F1471E83500242619 /* Place.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Place.h; path = FlickRWithCoreDataAndBlocks/Place.h; sourceTree = "<group>"; };
+		FAE792701471E83500242619 /* Place.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Place.m; path = FlickRWithCoreDataAndBlocks/Place.m; sourceTree = "<group>"; };
+		FAE792721471E83500242619 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Photo.h; path = FlickRWithCoreDataAndBlocks/Photo.h; sourceTree = "<group>"; };
+		FAE792731471E83500242619 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Photo.m; path = FlickRWithCoreDataAndBlocks/Photo.m; sourceTree = "<group>"; };
+		FAE792751471E83600242619 /* Photograph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Photograph.h; path = FlickRWithCoreDataAndBlocks/Photograph.h; sourceTree = "<group>"; };
+		FAE792761471E83600242619 /* Photograph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Photograph.m; path = FlickRWithCoreDataAndBlocks/Photograph.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,16 +188,16 @@
 		FA8B0AD9146F5C5A001EA378 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				FA8B0AF714702C24001EA378 /* Place.h */,
-				FA8B0AF814702C24001EA378 /* Place.m */,
-				FA8B0AF414702C23001EA378 /* Photograph.h */,
-				FA8B0AF514702C23001EA378 /* Photograph.m */,
-				FA8B0AF114702C22001EA378 /* Photo.h */,
-				FA8B0AF214702C22001EA378 /* Photo.m */,
 				FA8B0B1114707D10001EA378 /* PhotoGetter.h */,
 				FA8B0B1214707D11001EA378 /* PhotoGetter.m */,
 				FA8B0B1414707D82001EA378 /* PlaceGetter.h */,
 				FA8B0B1514707D82001EA378 /* PlaceGetter.m */,
+				FAE792721471E83500242619 /* Photo.h */,
+				FAE792731471E83500242619 /* Photo.m */,
+				FAE792751471E83600242619 /* Photograph.h */,
+				FAE792761471E83600242619 /* Photograph.m */,
+				FAE7926F1471E83500242619 /* Place.h */,
+				FAE792701471E83500242619 /* Place.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -340,9 +340,6 @@
 				FA8B0AD7146F5C41001EA378 /* ListPhotoByPlacesController.m in Sources */,
 				FA8B0AD8146F5C41001EA378 /* PhotoViewController.m in Sources */,
 				FA8B0ADE146F5D8F001EA378 /* CoreDataTableViewController.m in Sources */,
-				FA8B0AF314702C22001EA378 /* Photo.m in Sources */,
-				FA8B0AF614702C23001EA378 /* Photograph.m in Sources */,
-				FA8B0AF914702C24001EA378 /* Place.m in Sources */,
 				FA8B0AFC14702CDF001EA378 /* TopPlacesViewController.m in Sources */,
 				FA8B0AFF1470322A001EA378 /* ListPhotoByPlaceCoreDataViewController.m in Sources */,
 				FA8B0B09147049CF001EA378 /* FlickrTableViewController.m in Sources */,
@@ -356,6 +353,9 @@
 				FAE792651471CF0C00242619 /* SBJsonBase.m in Sources */,
 				FAE792661471CF0C00242619 /* SBJsonParser.m in Sources */,
 				FAE792671471CF0C00242619 /* SBJsonWriter.m in Sources */,
+				FAE792711471E83500242619 /* Place.m in Sources */,
+				FAE792741471E83500242619 /* Photo.m in Sources */,
+				FAE792771471E83600242619 /* Photograph.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

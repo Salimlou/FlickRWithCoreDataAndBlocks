@@ -2,7 +2,7 @@
 //  Place.m
 //  FlickRWithCoreDataAndBlocks
 //
-//  Created by Salim Benabbou on 13/11/11.
+//  Created by Salim Benabbou on 15/11/11.
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
@@ -12,18 +12,15 @@
 
 @implementation Place
 
-
-
-
-
 @dynamic content;
 @dynamic latitude;
+@dynamic placeID;
 @dynamic placeType;
 @dynamic placeTypeId;
-@dynamic placeID;
 @dynamic placeUrl;
 @dynamic timeZone;
 @dynamic woeid;
+@dynamic longitude;
 @dynamic photosInThatPlace;
 
 @end

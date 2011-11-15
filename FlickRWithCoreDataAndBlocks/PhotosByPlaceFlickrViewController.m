@@ -57,7 +57,7 @@
     
     Place * place =[Place placeById:[data objectForKey:@"place_id"] inContext:managedObjectContext];
     if (place) {
-        photo.relationship = place;
+        photo.takenIn = place;
         [place addPhotosInThatPlaceObject:photo];
     }
     

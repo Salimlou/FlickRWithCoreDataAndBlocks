@@ -21,7 +21,7 @@
 		NSFetchRequest *request = [[NSFetchRequest alloc] init];
 		request.entity = [NSEntityDescription entityForName:@"Photo" inManagedObjectContext:context];
 		request.sortDescriptors = [NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"title" ascending:YES]];
-		request.predicate = [NSPredicate predicateWithFormat:@"relationship = %@", placeSelected];
+		request.predicate = [NSPredicate predicateWithFormat:@"takenBy = %@", placeSelected];
 		request.fetchBatchSize = 20;
 		
 		[NSFetchedResultsController deleteCacheWithName:@"MyPhotoCache"];
